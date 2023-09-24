@@ -1,0 +1,12 @@
+{
+    "bot": {
+        "prefix": "n*",
+        "status": {
+            "activity": {
+                "type": "competing",
+                "name": "Grass Touching Tournament"
+            },
+            "type": "dnd"
+        }
+    }
+}

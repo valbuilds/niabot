@@ -1,0 +1,36 @@
+{
+    "content": "",
+    "tts": false,
+    "embeds": [
+    {
+        "id": 424507435,
+        "description": "`play.valbuilds.gay`",
+        "fields": [],
+        "title": "Server IP",
+        "color": 10647019
+    },
+    {
+        "id": 523991910,
+        "description": "The server runs [Fabric 1.19.2](https://fabricmc.net/) for the **Java Edition** of Minecraft.",
+        "fields": [],
+        "title": "Minecraft Version",
+        "color": 10647019
+    },
+    {
+        "id": 594250080,
+        "description": "Download the modpack from [Modrinth](https://modrinth.com/modpack/palacemods).",
+        "fields": [],
+        "title": "Mods",
+        "color": 10647019
+    },
+    {
+        "id": 388060013,
+        "description": "By joining the Minecraft server you expose your IP address to the server admins. **Your IP will never be shared, even with your permission.**",
+        "fields": [],
+        "color": 10647019,
+        "title": "Disclaimer"
+    }
+    ],
+    "components": [],
+    "actions": {}
+}
