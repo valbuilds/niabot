@@ -19,7 +19,7 @@ elif CONFIG['bot']['status']['activity']['type'] == 2 or CONFIG['bot']['status']
 elif CONFIG['bot']['status']['activity']['type'] == 3 or CONFIG['bot']['status']['activity']['type'].lower() == "watching":
     ACTIVITY = discord.Activity(type=discord.ActivityType.watching, name=CONFIG['bot']['status']['activity']['name'])
 elif CONFIG['bot']['status']['activity']['type'] == 4 or CONFIG['bot']['status']['activity']['type'].lower() == "custom":
-    ACTIVITY = discord.CustomActivity(name=CONFIG['bot']['status']['name'])
+    ACTIVITY = discord.CustomActivity(name=CONFIG['bot']['status']['activity']['name'])
 
 STATUS = discord.Status.online
 if CONFIG['bot']['status']['type'] == 0 or CONFIG['bot']['status']['type'] == "online":
