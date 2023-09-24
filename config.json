@@ -3,8 +3,8 @@
         "prefix": "n*",
         "status": {
             "activity": {
-                "type": 0,
-                "name": "Sex 2.0"
+                "type": "custom",
+                "name": ":3"
             },
             "type": 0
         }
@@ -28,6 +28,11 @@
         "mcserverdisclaimer": {
             "title": "Disclaimer",
             "description": "By joining the Minecraft server you expose your IP address to the server admins. Your IP will **never** be shared, even with your permission.",
+            "color": "0xA275EB"
+        },
+        "scrserverapplication": {
+            "title": "SCR Private Server Application",
+            "description": "To join the private SCR server, please fill out this form!\nhttps://forms.gle/Xyp5DFfC4cwNEF4s6",
             "color": "0xA275EB"
         }
     }
