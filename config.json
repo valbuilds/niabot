@@ -1,0 +1,34 @@
+{
+    "bot": {
+        "prefix": "n*",
+        "status": {
+            "activity": {
+                "type": 0,
+                "name": "Sex 2.0"
+            },
+            "type": 0
+        }
+    },
+    "embeds": {
+        "mcserverip": {
+            "title": "Server IP",
+            "description": "`play.valbuilds.gay`",
+            "color": "0xA275EB"
+        },
+        "mcserverversion": {
+            "title": "Minecraft Version",
+            "description": "The server runs [Fabric 1.19.2](https://fabricmc.net/) for the **Java Edition** of Minecraft.",
+            "color": "0xA275EB"
+        },
+        "mcservermods": {
+            "title": "Mods",
+            "description": "Download the modpack from [Modrinth](https://modrinth.com/modpack/palacemods).",
+            "color": "0xA275EB"
+        },
+        "mcserverdisclaimer": {
+            "title": "Disclaimer",
+            "description": "By joining the Minecraft server you expose your IP address to the server admins. Your IP will **never** be shared, even with your permission.",
+            "color": "0xA275EB"
+        }
+    }
+}
