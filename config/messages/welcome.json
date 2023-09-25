@@ -1,0 +1,42 @@
+{
+    "content": "",
+    "tts": false,
+    "embeds": [
+      {
+        "id": 896109099,
+        "title": "Welcome!",
+        "description": "It's great to see you! :3\nI'm here to get you started with how we do things around here.",
+        "color": 10647019,
+        "fields": []
+      },
+      {
+        "id": 505993123,
+        "description": "1. **Please make sure to be respectful.** Agree to disagree.\n    a. **Bigotry will not be tolerated.**\n2. **Follow [Discord's Terms of Service](https://discord.com/terms).** You must be over the age of 13 years of age to use Discord.\n3. **Please refrain from saying slurs.** All slurs go through our slur policy. (read more below)\n4. **Please stick to English.** To make moderation easier, we ask you to speak in the English language.\n5. **Make sure you use common sense.** Just because it isn't listed here, doesn't mean you can't get punished for it.",
+        "color": 10647019,
+        "author": {
+          "name": "Server Rules"
+        },
+        "fields": []
+      },
+      {
+        "id": 881829919,
+        "description": "Slurs can be harmful. So we ask that you stick to these guidelines to keep the community safe:\n* Don't use slurs in a harmful manner. (ex. \"You're such a \\*\\*\\*!\")\n* Try to keep slurs in spoilers. (how 2 spoiler: `||spoiler||`)\n* Keep in mind that even if you follow these guidelines, you may be punished for using slurs.",
+        "color": 10647019,
+        "author": {
+          "name": "Slur Policy"
+        },
+        "fields": []
+      },
+      {
+        "id": 743664725,
+        "timestamp": "2023-09-25T03:00:00+00:00",
+        "color": 10647019,
+        "footer": {
+          "text": "Last updated"
+        },
+        "fields": []
+      }
+    ],
+    "components": [],
+    "actions": {}
+  }
