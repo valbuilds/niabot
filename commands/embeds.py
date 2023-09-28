@@ -56,5 +56,5 @@ class Embeds(app_commands.Group):
             return interaction.response.send_message(content="You don't have the permissons to send an announcement!", ephemeral=True)
 
 async def setup(bot):
-    bot.tree.add_command(Embeds(name="embed", description="Embed commands (version 0.0.1a)"))
+    bot.tree.add_command(Embeds(name="embed", description="Embed commands"))
     print("commands.embeds is ready!")

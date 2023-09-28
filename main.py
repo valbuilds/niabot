@@ -3,15 +3,16 @@ import settings
 from discord.ext import commands
 
 def run():
-    bot = commands.Bot(command_prefix=settings.CONFIG['bot']['prefix'], intents=discord.Intents.all(), activity=settings.ACTIVITY, status=settings.STATUS)
+    bot = commands.Bot(command_prefix=settings.Config.prefix, intents=discord.Intents.all(), activity=settings.Status.a, status=settings.Status.s)
     
     @bot.event
     async def on_connect():
-        print("A quick warning: Slash commands may not be synced! Everytime slash commands are modified, you have to run " + '"' + settings.CONFIG['bot']['prefix'] + 'synccommands".')
+        print("A quick warning: Slash commands may not be synced! Everytime slash commands are modified, you have to run " + '"' + settings.Config.prefix + 'synccommands".')
     
     @bot.event
     async def on_ready():
         await bot.load_extension("commands.embeds")
+        await bot.load_extension("commands.sensitive")
         print("The bot is now online!")
 
     @bot.command()
