@@ -13,6 +13,7 @@ def run():
     async def on_ready():
         await bot.load_extension("commands.embeds")
         await bot.load_extension("commands.sensitive")
+        await bot.load_extension("events.topictags")
         print("The bot is now online!")
 
     @bot.command()
