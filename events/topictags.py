@@ -20,7 +20,6 @@ class TopicTags(commands.Cog):
         # -------
         if "[--uping:" in message.channel.topic:
                 p = message.channel.topic.split("[")[1].split("]")[0].split(":")[1].split(",")
-                print(p)
                 uid = int(p[0])
                 rid = int(p[1])
                 if message.author.id == uid:
