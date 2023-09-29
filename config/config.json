@@ -10,12 +10,6 @@
         },
         "channels": {
             "log": 1156967363799953439
-        },
-        "tags": {
-
-        },
-        "topictags": {
-            "uping": "{uid}:{upingid}"
         }
     }
 }
