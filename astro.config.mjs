@@ -6,7 +6,7 @@ export default defineConfig({
 	site: 'https://valbuilds.github.io',
 	integrations: [
 		starlight({
-			title: 'Nia',
+			title: 'Nia Documentation',
 			social: {
 				github: 'https://github.com/valbuilds/niabot',
 			},
@@ -17,6 +17,11 @@ export default defineConfig({
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Intro', link: '/usage/home' },
 						{ label: 'Hosting the Bot', link: '/usage/hosting' },
+						{ label: 'Premade Embeds',
+						items: [
+							{ label: 'Custom Embeds', link: '/usage/embeds/custom'}
+						]
+						}
 					],
 				},
 			],
