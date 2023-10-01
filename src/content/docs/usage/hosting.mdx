@@ -1,0 +1,66 @@
+---
+title: Hosting the Bot
+template: doc
+lastUpdated: 2023-09-30
+---
+
+:::tip
+For cheap and affordable hosting, I recommend [Google Cloud](https://cloud.google.com/free) or [Linode (Akamai)](https://www.linode.com/lp/free-credit-short/).
+
+You get a free [90-day $300 credit](https://cloud.google.com/free/docs/free-cloud-features#free-trial) on Google Cloud, and a free 60-day $100 credit with Linode. *Terms apply.*
+
+Read the [Recommended Specifications section](#recommended-specifications) to see what specs are recommended and how much hosting costs on a few hosting platforms.
+
+:::
+
+## Prerequisites
+
+- Python 3.11.5 or higher
+- PiP package manager
+- *(not required but very much recommended) A virtual environment*
+- A little knowledge on coding in Python and how to edit `.json` files.
+
+## Packages used
+
+:::tip
+For each of these packages, run `pip install <package name>` to install the package.
+:::
+
+- `discord.py[voice]`
+- `python-dotenv`
+- `peewee`
+- `requests`
+
+:::caution
+I might have missed some packages. **Please [open an issue on the Github repo](https://github.com/valbuilds/niabot/issues/new) if you run into any issues.**
+:::
+
+## Recommended Specifications
+
+### Google Cloud
+
+| Machine type | Boot disk                      | Estimated cost            |
+| :---         | :---                           | :---                      |
+| e2-small     | 30 GB Balanced persistent disk | $15.23/month ($0.02/hour) |
+
+### Linode (Akamai)
+
+| Plan        | Cost                    |
+| :---        | :---                    |
+| Linode 2 GB | $12/month ($0.018/hour) |
+
+### AWS Lightsail (Amazon Web Services Lightsail)
+
+| Virtual Server | Server utilization | Cost                      |
+| :---           | :---               | :---                      |
+| Bundle:2GB     | 100%/month         | $9.81/month ($0.013/hour) |
+
+### Other services (Look for these specifications)
+
+| CPUs | RAM    | Storage |
+| :--- | :---   | :---    |
+| 1-2  | 2-4 GB | 30+ GB  |
+
+## Notice
+
+*I am in no way partnered with, affiliated with, or payed by any hosting services mentioned on this page.*
