@@ -1,10 +1,7 @@
 ---
 title: Nia's Usage Guide
 template: doc
-lastUpdated: 2023-09-30
-banner:
-    content: |
-      This page is under construction.
+lastUpdated: 2023-10-02
 ---
 
 :::note
@@ -13,8 +10,62 @@ Nia does **not** have a publically availiable bot for you to use. **You have to 
 To get started hosting the bot, read [Hosting the Bot](../hosting).
 :::
 
-## Nia's Slash Commands
+## Slash Commands
 
 :::tip
 Slash commands are accessible by clicking `/` on your keyboard in a chat.
 :::
+
+### `embed`
+
+#### `embed send`
+
+Sends a premade embed.
+
+To make a premade embed, read [Custom Premade Embeds](../embeds/custom-premade).
+
+**Parameters:**
+- **id** ([`str`](https://docs.python.org/3/library/stdtypes.html#str)) - The name of the file you want to pull the embed from with out the `.json` ending. (ex: welcome)
+
+#### `embed announce`
+
+Sends an announcement.
+
+:::danger[Permission Requirement]
+You must have the **Manage Events** permission to use this command.
+:::
+
+**Parameters:**
+- **channel** ([`discord.TextChannel`](https://discordpy.readthedocs.io/en/stable/api.html?highlight=discord%20textchannel#discord.TextChannel)) - The channel you want to send the announcement to.
+- **announcement** ([`str`](https://docs.python.org/3/library/stdtypes.html#str)) - The text you want to be used in the announcement.
+- **link1** (Optional[[`str`](https://docs.python.org/3/library/stdtypes.html#str)]) - The link for the first button.
+- **link2** (Optional[[`str`](https://docs.python.org/3/library/stdtypes.html#str)]) - The link for the second button.
+- **link3** (Optional[[`str`](https://docs.python.org/3/library/stdtypes.html#str)]) - The link for the third button.
+- **link4** (Optional[[`str`](https://docs.python.org/3/library/stdtypes.html#str)]) - The link for the fourth button.
+- **link5** (Optional[[`str`](https://docs.python.org/3/library/stdtypes.html#str)]) - The link for the fifth button.
+
+### `sensitive`
+
+#### `sensitive anon`
+
+Sends an anonymous message.
+
+:::caution
+Anonymous messages are logged in a configurable channel. Read [Configuring the Bot](../configuring) for more info.
+:::
+
+## Topic Tags
+
+Add a topic tag to a channel to allow for users to do more.
+
+### uping
+
+Allows a user to ping a role in a channel. Useful for if a user is allowed to ping a role but shouldn't be allowed to ping everyone.
+
+Add `[--uping:<user id>,<role id>]` to the channels topic.
+
+The user should be able to add `|| PING ||` to ping the role.
+
+**Parameters:**
+- **userid** ([discord.User.id](https://discordpy.readthedocs.io/en/stable/api.html#discord.User)) - The user ID that should be allowed to ping.
+- **roleid** ([discord.Role.id](https://discordpy.readthedocs.io/en/stable/api.html#discord.Role)) - The role ID that should be allowed to be pinged.
