@@ -36,3 +36,4 @@ class TopicTags(commands.Cog):
 
 async def setup(bot):
     await bot.add_cog(TopicTags(bot))
+    print("events.topictags is ready!")
