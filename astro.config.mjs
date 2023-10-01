@@ -4,7 +4,7 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://valbuilds.github.io',
-	base: 'niabot',
+	base: '/niabot',
 	integrations: [
 		starlight({
 			title: 'Nia',
