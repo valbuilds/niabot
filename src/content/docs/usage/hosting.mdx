@@ -4,6 +4,8 @@ template: doc
 lastUpdated: 2023-10-02
 ---
 
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
 :::caution
 This is not a how-to guide on how to setup the bot. Read [Self Hosting](../self-host) for that.
 :::
@@ -35,35 +37,41 @@ For each of these packages, run `pip install <package name>` to install the pack
 - `peewee`
 - `requests`
 
-:::caution
+:::note
 I might have missed some packages. **Please [open an issue on the Github repo](https://github.com/valbuilds/niabot/issues/new) if you run into any issues.**
 :::
 
-## Recommended Specifications
+## Recommended Hardware Configuration
 
-### Google Cloud
+<Tabs>
+    <TabItem label="Google Cloud">
+        | Machine type | Boot disk                      | Estimated cost                                                                                                                                                       |
+        | :---         | :---                           | :---                                                                                                                                                                 |
+        | e2-small     | 30 GB Balanced persistent disk | $15.23/month ($0.02/hour)                                                                                                                                            |
+        | e2-micro     | 30 GB Standard persistent disk | If enrolled in the [free tier program](https://cloud.google.com/free/docs/free-cloud-features#free-tier), $0.00/month ($0.00/hour); If not, $9.11/month ($0.01/hour) |
 
-| Machine type | Boot disk                      | Estimated cost            |
-| :---         | :---                           | :---                      |
-| e2-small     | 30 GB Balanced persistent disk | $15.23/month ($0.02/hour) |
+        If you haven't been a Google cloud customer before, you may be eligible for Google Cloud's free $300 credit. *(The credit only lasts 90 days. Terms apply.)* Click [here](https://cloud.google.com/free/docs/free-cloud-features#free-trial) to read more and [here](https://cloud.google.com/) to sign up.
+    </TabItem>
+    <TabItem label="Linode (Akamai)">
+        | Plan        | Cost                    |
+        | :---        | :---                    |
+        | Linode 2 GB | $12/month ($0.018/hour) |
 
-### Linode (Akamai)
+        If you haven't been a Linode cloud customer before, you may be eligible for Linode's free $100 credit. *(The credit only lasts 60 days. Terms apply.)* Click [here](https://www.linode.com/lp/free-credit-short/) to sign up.
+    </TabItem>
+    <TabItem label="AWS Lightsail">
+        | Virtual Server | Server utilization | Cost                      |
+        | :---           | :---               | :---                      |
+        | Bundle:2GB     | 100%/month         | $9.81/month ($0.013/hour) |
 
-| Plan        | Cost                    |
-| :---        | :---                    |
-| Linode 2 GB | $12/month ($0.018/hour) |
-
-### AWS Lightsail (Amazon Web Services Lightsail)
-
-| Virtual Server | Server utilization | Cost                      |
-| :---           | :---               | :---                      |
-| Bundle:2GB     | 100%/month         | $9.81/month ($0.013/hour) |
-
-### Other services (Look for these specifications)
-
-| CPUs | RAM    | Storage |
-| :--- | :---   | :---    |
-| 1-2  | 2-4 GB | 30+ GB  |
+        *AWS might have a free-trial. I'm not fully sure.*
+    </TabItem>
+    <TabItem label="Other service (Specifications)">
+        | CPUs | RAM    | Storage |
+        | :--- | :---   | :---    |
+        | 1-2  | 2-4 GB | 30+ GB  |
+    </TabItem>
+</Tabs>
 
 ## Notice
 
