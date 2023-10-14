@@ -1,6 +1,8 @@
 import discord
 import settings
 from discord.ext import commands
+from discord import app_commands
+import aiohttp
 
 def run():
     bot = commands.Bot(command_prefix=settings.Config.prefix, intents=discord.Intents.all(), activity=settings.Status.a, status=settings.Status.s)
@@ -22,6 +24,24 @@ def run():
         r = await ctx.reply(content="Syncing...")
         await bot.tree.sync()
         await r.edit(content="Synced!")
+    
+    @bot.tree.context_menu(name="Reblog")
+    async def reblog(interaction: discord.Interaction, message: discord.Message):
+        print("interaction received")
+        await interaction.response.send_message(content="One second...", ephemeral=True)
+        print("interaction response created!")
+        w = await message.channel.create_webhook(name=interaction.user.display_name, avatar=await interaction.user.display_avatar.read())
+        print("webhok made")
+        async with aiohttp.ClientSession() as session:
+            print("webhook connected")
+            webhook = discord.Webhook.from_url(w.url, session=session)
+            await webhook.send(content=message.content, files=message.attachments, embeds=message.embeds, allowed_mentions=None)
+            print("message sent")
+        await w.delete()
+        print("webhook deleted")
+        await interaction.response.edit_message(content="Reblogged!")
+        print("interaction response edited!")
+
 
     bot.run(settings.TOKEN)
 
