@@ -39,8 +39,6 @@ def run():
             print("message sent")
         await w.delete()
         print("webhook deleted")
-        await interaction.response.edit_message(content="Reblogged!")
-        print("interaction response edited!")
 
 
     bot.run(settings.TOKEN)
